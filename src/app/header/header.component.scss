@@ -1,0 +1,91 @@
+nav {
+  background-color: #333;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        color: #fff;
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.2s ease;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.2s ease-in-out 0s;
+        }
+
+        &:hover:before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+
+        &.active {
+          background-color: #333;
+          color: #ffffff;
+        }
+
+        &:first-child {
+          &:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3),
+              0 10px 20px rgba(0, 0, 0, 0.2), 0 18px 35px rgba(0, 0, 0, 0.2),
+              inset 0 -2px 4px rgba(0, 0, 0, 0.3),
+              inset 0 -10px 20px rgba(0, 0, 0, 0.2),
+              inset 0 -18px 35px rgba(0, 0, 0, 0.2);
+            background-color: rgba(2, 21, 28, 0.19);
+            color: #5c722e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.signup-button {
+  background-color:#52224d; /* Purple background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 20px; /* Move the button to the right */
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.signup-button:hover {
+  background-color:  #3e1a3a; /* Darker purple background on hover */
+}
+.inventory_button{
+  background-color: #333;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+  }

@@ -1,0 +1,100 @@
+/* home.component.scss */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-button {
+    background-color: #52224d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #3e1a3a;
+  }
+  
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+
+}
+h1,
+h2 {
+    color: #113597;
+  /* 1 pixel black shadow to left, top, right and bottom */
+  text-shadow: 2.5px 0 rgba(174, 174, 174, 0.438);
+  padding: 10px; /* Add padding to the text */
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 68px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 34px;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff5131;
+}
+.tech {
+  width: 22%;
+  padding: 30px;
+  float: 20%;
+}
