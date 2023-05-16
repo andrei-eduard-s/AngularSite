@@ -38,3 +38,13 @@ p{
 .edit{
   background-color: rgba(0, 47, 18, 0.692);
 }
+.add_item{
+  display: flex;
+  margin-left: 2%;
+  background: rgb(128, 34, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(54, 136, 219, 0.2) 100%,
+    rgba(255, 0, 225, 0.5) 100%
+  );
+}

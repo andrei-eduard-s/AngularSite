@@ -14,5 +14,6 @@
         <mat-label>Fill form field</mat-label>
         <input matinput type = "text" formControlName = "cantitate" placeholder = "cantitate"> 
     </mat-form-field>
+    <button mat-raised-button="accent" *ngIf="data.idToBeEdit != 0"(click)="updateItem()">update</button>
+    <button mat-raised-button="accent" *ngIf="data.idToBeEdit != 0"(click)="saveNewItem()">save</button>
 </div>
-{{data[0]}}
