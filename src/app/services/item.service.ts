@@ -19,7 +19,7 @@ export class ItemService {
   }
 
   createItem(item: Item): Observable<Item> {
-    return this.httpClient.get(this.baseUrl + 'getItems/' + item) as Observable<Item>;
+    return this.httpClient.post(this.baseUrl + 'post',  item) as Observable<Item>;
   }
 
   delete(id: number): Observable<null> {

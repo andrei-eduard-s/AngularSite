@@ -15,7 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { MatMenuModule } from '@angular/material/menu';
     FormComponent
   ],
   imports: [
+    MatInputModule,
     HttpClientModule,
     MatDialogModule,
     MatButtonModule,

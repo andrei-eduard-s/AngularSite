@@ -43,7 +43,7 @@ export class InventoryComponent implements OnInit {
     );
   }
 
-  async openDialog(id: number | undefined | null) {
+  async openDialog(id: number | null) {
     const dialogRef = this.dialog.open(FormComponent, {
       width: '250px',
       data: { idToBeEdit: id },
