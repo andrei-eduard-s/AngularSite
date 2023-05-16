@@ -1,19 +1,19 @@
-<h1 mat-dialog-title>hh</h1>
+<h1 mat-dialog-title>Item</h1>
 <div class="form" [formGroup]="form">
     <mat-form-field appearance = "fill">
         <mat-label>Fill form field</mat-label>
-        <input matInput type="text" formControlName="name" placeholder="nume"> 
+        <input matInput type="text" formControlName="name" placeholder="name"> 
     </mat-form-field>
 
     <mat-form-field appearance = "fill">
         <mat-label>Fill form field</mat-label>
-        <input matInput type="text" formControlName="number" placeholder="descriere"> 
+        <input matInput type="text" formControlName="number" placeholder="number"> 
     </mat-form-field>
 
     <mat-form-field appearance = "fill">
         <mat-label>Fill form field</mat-label>
-        <input matInput type="text" formControlName="category" placeholder="cantitate"> 
+        <input matInput type="text" formControlName="category" placeholder="category">
     </mat-form-field>
     <!---->
-    <button mat-raised-button="accent" (click)="saveNewItem()">save</button>
+    <button mat-raised-button="accent" (click)="saveNewItem()">Save</button>
 </div>
