@@ -62,7 +62,7 @@ nav {
   }
 }
 
-.signup-button {
+.contact-button {
   background-color:#52224d; /* Purple background */
   border: none;
   color: white;
@@ -77,14 +77,14 @@ nav {
   transition: background-color 0.3s ease; /* Add transition effect */
 }
 
-.signup-button:hover {
+.contact-button:hover {
   background-color:  #3e1a3a; /* Darker purple background on hover */
 }
 .inventory_button{
   background-color: #333;
   display: inline-block;
   color: #fff;
-  padding: 10px 15px;
+  padding: 5px 15px;
   text-decoration: none;
   position: relative;
   transition: all 0.2s ease;

@@ -18,10 +18,12 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
 import { AboutComponent } from './pages/about/about.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Route for the home page
   { path: 'about', component: AboutComponent }, // Route for the About page
+  { path: 'contact', component: ContactComponent }, // Route for the Contact page
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const routes: Routes = [
     InventoryComponent,
     HomeComponent,
     FormComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     MatInputModule,
