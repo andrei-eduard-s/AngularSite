@@ -16,6 +16,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatInputModule } from '@angular/material/input';
+import { AboutComponent } from './pages/about/about.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent }, // Route for the home page
+  { path: 'about', component: AboutComponent }, // Route for the About page
+];
 
 @NgModule({
   declarations: [
@@ -23,7 +30,8 @@ import { MatInputModule } from '@angular/material/input';
     HeaderComponent,
     InventoryComponent,
     HomeComponent,
-    FormComponent
+    FormComponent,
+    AboutComponent
   ],
   imports: [
     MatInputModule,
@@ -38,7 +46,8 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

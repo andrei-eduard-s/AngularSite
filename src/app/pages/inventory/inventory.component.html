@@ -1,9 +1,9 @@
 <button class="add_item" mat-raised-button color="accent" (click)="openDialog(0)">Add item</button>
 <div class="items">
   <div *ngFor="let item of itemList" class="item">
-    <p>Nume: {{item.name}}</p>
-    <p>Descriere: {{item.category}}</p>
-    <p>Cantitate: {{item.number}}</p>
+    <p>Name: {{item.name}}</p>
+    <p>Description: {{item.category}}</p>
+    <p>Price: {{item.number}}€</p>
     <button class = "delete"(click)="deleteItem(item.id)">Delete</button>
     <button class = "edit"(click)="openDialog(item.id!)">Edit</button>
   </div>

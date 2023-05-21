@@ -14,4 +14,8 @@ export class HeaderComponent {
   GoToInventory(){
     this.router.navigate(['inventory'])
   }
+  GoToAbout(): void {
+    this.router.navigateByUrl('/about');
+  }
+  
 }
